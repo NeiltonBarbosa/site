@@ -1,7 +1,8 @@
 {
     "env": {
         "es2020": true,
-        "node": true
+        "node": true,
+        "jest": true
     },
     "extends": [
         "airbnb-base",
@@ -22,12 +23,22 @@
         "prettier/prettier": "error",
         "class-methods-use-this": "off",
         "no-useless-constructor": "off",
+        "no-console": "off",
+        "camelcase": "off",
+        "@typescript-eslint/camelcase": "off",
         "@typescript-eslint/no-unused-vars": [
             "error",
             {
                 "argsIgnorePattern": "_"
             }
         ],
+        "import/extensions": [
+          "error",
+          "ignorePackages",
+          {
+            "ts": "never"
+          }
+        ]
     },
     "settings": {
         "import/resolver": {
